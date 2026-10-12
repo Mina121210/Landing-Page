@@ -1,0 +1,519 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>VisionAI - AI Image Generator</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" />
+    <link rel="stylesheet" href="style.css" />
+    <script src="file.js" defer></script>
+</head>
+
+<body>
+
+    <!-- ========== NAVBAR ========== -->
+    <nav class="navbar">
+        <div class="logo">
+            <div class="log">✦ Vision</div>
+            <span>AI</span>
+        </div>
+
+        <ul class="nav-links">
+            <li><a href="#features">Features</a></li>
+            <li><a href="#gallery">Gallery</a></li>
+            <li><a href="#how-it-works">HOW IT WORKS</a></li>
+            <li><a href="#pricing">Pricing</a></li>
+            <li><a href="#footer">Contact</a></li>
+        </ul>
+
+        <div class="right-side">
+            <div class="desktop-buttons">
+                <button class="login-btn" onclick="alert('Login page is not implemented in this demo.')">
+                    <i class="fa-solid fa-right-to-bracket"></i> Login
+                </button>
+                <button class="start-btn" onclick="document.getElementById('pricing').scrollIntoView({behavior: 'smooth'});">
+                    Get Started →
+                </button>
+            </div>
+            <div class="menu-btn" id="menuBtn">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- ========== MOBILE MENU ========== -->
+    <div class="mobile-menu" id="mobileMenu">
+        <a href="#features"><i class="fa-solid fa-wand-magic-sparkles"></i> Features</a>
+        <a href="#gallery"><i class="fa-solid fa-images"></i> Gallery</a>
+        <a href="#how-it-works"><i class="fa-solid fa-layer-group"></i> Solutions</a>
+        <a href="#pricing"><i class="fa-solid fa-tags"></i> Pricing</a>
+        <a href="#footer"><i class="fa-solid fa-envelope"></i> Contact</a>
+        <div class="mobile-buttons">
+            <button class="login-btn" onclick="alert('Login page is not implemented in this demo.')">
+                <i class="fa-solid fa-right-to-bracket"></i> Login
+            </button>
+            <button class="start-btn" onclick="document.getElementById('pricing').scrollIntoView({behavior: 'smooth'});">
+                Get Started →
+            </button>
+        </div>
+    </div>
+
+    <!-- ========== HERO ========== -->
+    <div class="container">
+        <section class="hero">
+            <div class="left">
+                <div class="badgee reveal">
+                    <span>New</span> VisionAI 2.0 Is Here!
+                </div>
+                <h1 class="reveal">
+                    See Your Vision Come
+                    <span>to Life</span>
+                </h1>
+                <p>
+                    Transform your ideas into stunning visuals with the power of VisionAI.
+                    The smartest AI image platform built for creators,
+                    designers, and visionary brands.
+                </p>
+                <div class="buttons">
+                    <button class="primary" onclick="location.href='#pricing'">
+                        <i class="fa-solid fa-rocket"></i> Start Creating Free →
+                    </button>
+                    <button class="secondary">
+                        <i class="fa-solid fa-circle-play"></i> Watch Demo
+                    </button>
+                </div>
+                <div class="features">
+                    <div class="feature">✔ No Credit Card Required</div>
+                    <div class="feature">✔ 10 Free Images Daily</div>
+                    <div class="feature">✔ Cancel Anytime</div>
+                </div>
+            </div>
+
+            <div class="right">
+                <div class="dashboard reveal">
+                    <div class="sidebar-overlay" id="sidebarOverlay"></div>
+
+                    <div class="sidebar" id="sidebar">
+                        <div class="brand">✦ Vision<span>AI</span></div>
+                        <div class="menu">
+                            <div class="menu-item active"><i class="fa-solid fa-house"></i> Home</div>
+                            <div class="menu-item"><i class="fa-solid fa-wand-magic-sparkles"></i> Generate</div>
+                            <div class="menu-item"><i class="fa-solid fa-cubes"></i> Models</div>
+                            <div class="menu-item"><i class="fa-solid fa-images"></i> Gallery</div>
+                            <div class="menu-item"><i class="fa-solid fa-toolbox"></i> Tools</div>
+                            <div class="menu-item"><i class="fa-solid fa-folder-open"></i> Projects</div>
+                            <div class="menu-item"><i class="fa-solid fa-gear"></i> Settings</div>
+                        </div>
+                        <div class="pro">
+                            <h4>Upgrade To Pro</h4>
+                        </div>
+                    </div>
+
+                    <div class="content">
+                        <div class="top">
+                            <div class="top-left">
+                                <div class="dashboard-menu-btn" id="dashboardMenuBtn">
+                                    <span></span>
+                                    <span></span>
+                                    <span></span>
+                                </div>
+                            </div>
+                            <div class="top-right">
+                                <div class="coin">🪙 2450</div>
+                                <div class="avata">👤</div>
+                            </div>
+                        </div>
+
+                        <h2>Welcome Back, Alex 👋</h2>
+                        <p class="p">What will you create with VisionAI today?</p>
+
+                        <div class="prompt">
+                            <input type="text" placeholder="Describe your vision..." />
+                            <button>
+                                <i class="fa-solid fa-wand-magic-sparkles"></i> Generate
+                            </button>
+                        </div>
+
+                        <div class="tools">
+                            <div class="tool"><i class="fa-solid fa-images"></i> Image To Image</div>
+                            <div class="tool"><i class="fa-solid fa-pen-to-square"></i> AI Edit</div>
+                            <div class="tool"><i class="fa-solid fa-magnifying-glass-plus"></i> Upscale</div>
+                            <div class="tool"><i class="fa-solid fa-scissors"></i> Remove BG</div>
+                        </div>
+
+                        <div class="line">
+                            <h6>Recent creations</h6>
+                            <h5>View all</h5>
+                        </div>
+
+                        <div class="recent">
+                            <img src="1786096421932.png" alt="Recent creation 1" />
+                            <img src="1786096725694.png" alt="Recent creation 2" />
+                            <img src="1786096606397.png" alt="Recent creation 3" />
+                            <img src="1786096939599.png" alt="Recent creation 4" />
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </div>
+
+    <!-- ========== LOGOS ========== -->
+    <div class="container">
+        <section class="logos">
+            <h3>Trusted by 20,000+ creators and teams worldwide</h3>
+            <div class="logo-grid">
+                <div>Google</div>
+                <div>Microsoft</div>
+                <div>Adobe</div>
+                <div>Airbnb</div>
+                <div>Notion</div>
+                <div>Discord</div>
+            </div>
+        </section>
+    </div>
+
+    <!-- ========== FEATURES ========== -->
+    <div class="container">
+        <div class="features-header" id="features">
+            <span class="section-label">
+                <i class="fa-solid fa-wand-magic-sparkles"></i> FEATURES
+            </span>
+            <h1>Powerful tools for limitless creativity</h1>
+            <p>Everything you need to create, edit and enhance images with AI</p>
+        </div>
+
+        <div class="cards">
+            <div class="card reveal">
+                <h3>Text to Image</h3>
+                <p>Transform your words into incredible, high-quality images.</p>
+                <img class="card-img" src="file_000000006eb081f49536b131dae0d3d7.png" alt="Text to Image" />
+            </div>
+            <div class="card reveal">
+                <h3>AI Editing</h3>
+                <p>Edit, enhance, remove objects, and more with AI-powered tools.</p>
+                <img class="card-img" src="image-1.jpg" alt="AI Editing" />
+            </div>
+            <div class="card reveal">
+                <h3>Lightning Fast</h3>
+                <p>Generate images in seconds with our next-gen AI models.</p>
+                <img class="card-img" src="file_00000000fea881f4aeeb0c33650272b1.png" alt="Lightning Fast" />
+            </div>
+            <div class="card reveal">
+                <h3>Commercial Use</h3>
+                <p>Use your images commercially with full legal rights.</p>
+                <img class="card-img" src="image.jpg" alt="Commercial Use" />
+            </div>
+        </div>
+    </div>
+
+    <!-- ========== HOW IT WORKS ========== -->
+    <div class="container">
+        <div class="how-it-works" id="how-it-works">
+            <span class="section-label">
+                <i class="fa-solid fa-layer-group"></i> HOW IT WORKS
+            </span>
+            <h2>Create amazing images in 3 simple steps</h2>
+            <div class="steps">
+                <div class="step reveal">
+                    <div class="step-circle" data-number="1">✍️</div>
+                    <h3>Describe your idea</h3>
+                    <p>Type a detailed description of the image you want.</p>
+                </div>
+                <div class="step reveal">
+                    <div class="step-circle" data-number="2">⚡</div>
+                    <h3>Generate</h3>
+                    <p>Our AI will create your image in seconds.</p>
+                </div>
+                <div class="step reveal">
+                    <div class="step-circle" data-number="3">⬇️</div>
+                    <h3>Download &amp; use</h3>
+                    <p>Download your image and use it anywhere you want.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- ========== GALLERY ========== -->
+    <div class="container">
+        <section class="gallery" id="gallery">
+            <div class="subtitle">
+                <i class="fa-solid fa-images"></i> GALLERY
+            </div>
+            <h2 class="title">See what others are creating</h2>
+            <p class="desc">Explore amazing AI-generated images from our community</p>
+            <div class="gallery-grid">
+                <div class="gallery-card reveal">
+                    <img src="file_00000000b49881f4a708db021ebf455f.png" alt="AI Portrait Art" />
+                </div>
+                <div class="gallery-card reveal">
+                    <img src="file_00000000b34881f6ad4b6886e64e68c3.png" alt="AI Fantasy Landscape" />
+                </div>
+                <div class="gallery-card reveal">
+                    <img src="file_000000002af481f4ab7b699d4ac0f329.png" alt="AI Futuristic City" />
+                </div>
+                <div class="gallery-card reveal">
+                    <img src="file_0000000084ac820c95b3d43d212b7cf5.png" alt="AI Abstract Digital Art" />
+                </div>
+            </div>
+        </section>
+    </div>
+
+    <!-- ========== PRICING ========== -->
+    <div class="container">
+        <section class="pricing" id="pricing">
+            <div class="subtitle">
+                <i class="fa-solid fa-tags"></i> PRICING
+            </div>
+            <h2 class="title">Simple, transparent pricing</h2>
+            <p class="desc">Choose the plan that works best for you</p>
+
+            <div class="pricing-grid">
+                <div class="price-card reveal">
+                    <h3 class="plan">Free</h3>
+                    <div class="price">$0 <span>/month</span></div>
+                    <ul class="plan-features">
+                        <li>10 Images / Day</li>
+                        <li>Standard Models</li>
+                        <li>Basic Editing Tools</li>
+                        <li>Community Support</li>
+                    </ul>
+                    <button class="btn btn-dark" onclick="document.getElementById('pricing').scrollIntoView({behavior: 'smooth'});">
+                        <i class="fa-solid fa-rocket"></i> Get Started
+                    </button>
+                </div>
+
+                <div class="price-card popular reveal">
+                    <div class="badge">Most Popular</div>
+                    <h3 class="plan">Pro</h3>
+                    <div class="price">$12 <span>/month</span></div>
+                    <ul class="plan-features">
+                        <li>Unlimited Images</li>
+                        <li>All AI Models</li>
+                        <li>Advanced Editing Tools</li>
+                        <li>Priority Support</li>
+                    </ul>
+                    <button class="btn btn-blue">
+                        <i class="fa-solid fa-crown"></i> Start Pro Trial
+                    </button>
+                </div>
+
+                <div class="price-card reveal">
+                    <h3 class="plan">Team</h3>
+                    <div class="price">$39 <span>/month</span></div>
+                    <ul class="plan-features">
+                        <li>Everything In Pro</li>
+                        <li>Team Collaboration</li>
+                        <li>Shared Templates</li>
+                        <li>API Access</li>
+                    </ul>
+                    <button class="btn btn-dark">
+                        <i class="fa-solid fa-users"></i> Start Team Plan
+                    </button>
+                </div>
+            </div>
+        </section>
+    </div>
+
+    <!-- ========== TESTIMONIALS + FAQ ========== -->
+    <div class="container">
+        <div class="tf-wrapper">
+            <div class="testimonials">
+                <div class="section-title">
+                    <span class="quote-icon">“</span>
+                    What People Say
+                </div>
+                <p class="section-subtitle">
+                    Trusted by creators, developers, and businesses who build with AI Vision.
+                </p>
+
+                <div class="testimonials-list">
+                    <div class="testimonial-card">
+                        <div>
+                            <div class="stars">★★★★★</div>
+                            <p class="testimonial-text">
+                                “AI Vision transformed the way we analyze images. The accuracy and speed are outstanding!”
+                            </p>
+                        </div>
+                        <div class="user-info">
+                            <img class="avatar" src="https://i.pravatar.cc/100?img=11" alt="Ahmed N." />
+                            <div class="user-details">
+                                <h4>Ahmed N.</h4>
+                                <p>AI Engineer</p>
+                            </div>
+                        </div>
+                        <span class="quote-end">”</span>
+                    </div>
+
+                    <div class="testimonial-card">
+                        <div>
+                            <div class="stars">★★★★★</div>
+                            <p class="testimonial-text">
+                                “Integrating AI Vision into our product was seamless and the results exceeded our expectations.”
+                            </p>
+                        </div>
+                        <div class="user-info">
+                            <img class="avatar" src="https://i.pravatar.cc/100?img=5" alt="Sara M." />
+                            <div class="user-details">
+                                <h4>Sara M.</h4>
+                                <p>Product Manager</p>
+                            </div>
+                        </div>
+                        <span class="quote-end">”</span>
+                    </div>
+
+                    <div class="testimonial-card">
+                        <div>
+                            <div class="stars">★★★★★</div>
+                            <p class="testimonial-text">
+                                “The best vision API we've used. Highly recommended for anyone building AI-powered solutions.”
+                            </p>
+                        </div>
+                        <div class="user-info">
+                            <img class="avatar" src="https://i.pravatar.cc/100?img=12" alt="Omar K." />
+                            <div class="user-details">
+                                <h4>Omar K.</h4>
+                                <p>CTO, InnovateX</p>
+                            </div>
+                        </div>
+                        <span class="quote-end">”</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="faq">
+                <h2 class="faq-title">Frequently Asked Questions</h2>
+                <p class="faq-subtitle">Find quick answers to common questions about AI Vision.</p>
+
+                <div class="faq-list">
+                    <div class="faq-item">
+                        <div class="faq-icon">
+                            <i class="fa-solid fa-brain"></i>
+                        </div>
+                        <div class="faq-content">
+                            <h3>What is AI Vision?</h3>
+                            <p>AI Vision is an advanced image analysis API that helps you detect, recognize, and understand visual content.</p>
+                        </div>
+                    </div>
+
+                    <div class="faq-item">
+                        <div class="faq-icon">
+                            <i class="fa-solid fa-rocket"></i>
+                        </div>
+                        <div class="faq-content">
+                            <h3>What kind of performance can I expect?</h3>
+                            <p>AI Vision is optimized for speed and accuracy, delivering results in real-time even on large-scale projects.</p>
+                        </div>
+                    </div>
+
+                    <div class="faq-item">
+                        <div class="faq-icon">
+                            <i class="fa-solid fa-shield-halved"></i>
+                        </div>
+                        <div class="faq-content">
+                            <h3>Is my data secure?</h3>
+                            <p>Yes, we take security and privacy seriously. Your data is encrypted and never shared with third parties.</p>
+                        </div>
+                    </div>
+
+                    <div class="faq-item">
+                        <div class="faq-icon">
+                            <i class="fa-solid fa-gift"></i>
+                        </div>
+                        <div class="faq-content">
+                            <h3>Is there a free trial?</h3>
+                            <p>Yes! You can try AI Vision free with our generous trial plan and explore all features.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="support-box">
+                    <div class="support-icon">
+                        <i class="fa-solid fa-headset"></i>
+                    </div>
+                    <div class="support-text">
+                        Still have questions?<br />
+                        <a href="#">Contact our support team →</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- ========== CTA ========== -->
+    <div class="cta">
+        <div class="box1">
+            <div class="box">
+                <h2>
+                    <i class="fa-solid fa-lightbulb"></i> Ready to bring your ideas to life?
+                </h2>
+                <p>Join thousands of creators using VisionAI to create amazing images.</p>
+            </div>
+        </div>
+        <div class="btn-parentt">
+            <div class="cta-btn">Start Creating Free →</div>
+        </div>
+    </div>
+
+    <!-- ========== FOOTER ========== -->
+    <footer id="footer">
+        <div class="footer-content">
+            <div>
+                <div class="footer-brand">
+                    <div class="footer-icon">👁️</div>
+                    <div class="footer-logo">Vision<span>AI</span></div>
+                </div>
+                <p>The most powerful AI image generator for creators and businesses.</p>
+                <div class="social-links">
+                    <a href="javascript:void(0)" aria-label="Twitter">
+                        <i class="fa-brands fa-x-twitter"></i>
+                    </a>
+                    <a href="javascript:void(0)" aria-label="Instagram">
+                        <i class="fa-brands fa-instagram"></i>
+                    </a>
+                    <a href="javascript:void(0)" aria-label="Facebook">f</a>
+                    <a href="javascript:void(0)" aria-label="LinkedIn">in</a>
+                </div>
+            </div>
+
+            <div class="footer-col">
+                <h4><i class="fa-solid fa-box"></i> Product</h4>
+                <a href="javascript:void(0)">Features</a>
+                <a href="javascript:void(0)">How it works</a>
+                <a href="javascript:void(0)">Pricing</a>
+                <a href="javascript:void(0)">Updates</a>
+            </div>
+
+            <div class="footer-col">
+                <h4><i class="fa-solid fa-book"></i> Resources</h4>
+                <a href="javascript:void(0)">Blog</a>
+                <a href="javascript:void(0)">Tutorials</a>
+                <a href="javascript:void(0)">Help Center</a>
+                <a href="javascript:void(0)">API Docs</a>
+            </div>
+
+            <div class="footer-col">
+                <h4><i class="fa-solid fa-building"></i> Company</h4>
+                <a href="javascript:void(0)">About us</a>
+                <a href="javascript:void(0)">Careers</a>
+                <a href="javascript:void(0)">Privacy Policy</a>
+                <a href="javascript:void(0)">Terms of Service</a>
+            </div>
+
+            <div class="footer-col newsletter">
+                <h4><i class="fa-solid fa-envelope"></i> Newsletter</h4>
+                <p>Get tips, updates, and inspiration straight to your inbox.</p>
+                <input type="email" placeholder="Enter your email" />
+            </div>
+        </div>
+    </footer>
+
+    <div class="foot">Designed &amp; Developed By Mina Morcos</div>
+
+    <!-- ========== MODE TOGGLE ========== -->
+    <button id="modeToggle" class="Toggle">🌙</button>
+
+</body>
+</html>
